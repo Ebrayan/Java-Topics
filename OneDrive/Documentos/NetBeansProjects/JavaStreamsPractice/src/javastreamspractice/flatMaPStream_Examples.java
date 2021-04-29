@@ -23,10 +23,14 @@ public class flatMaPStream_Examples {
         List<String> teamSriLanka = Arrays.asList("Mahela", "Sanga", "Dilshan"); 
         List<String> teamPakistan = Arrays.asList("Misbah", "Afridi", "Shehzad"); 
         List<List<String>> playersInWorldCup2016 = new ArrayList<>(); 
-        playersInWorldCup2016.add(teamIndia); playersInWorldCup2016.add(teamAustralia); 
-        playersInWorldCup2016.add(teamEngland); playersInWorldCup2016.add(teamNewZeland);
-        playersInWorldCup2016.add(teamSouthAfrica); playersInWorldCup2016.add(teamWestIndies); 
-        playersInWorldCup2016.add(teamSriLanka); playersInWorldCup2016.add(teamPakistan); 
+        playersInWorldCup2016.add(teamIndia); 
+        playersInWorldCup2016.add(teamAustralia); 
+        playersInWorldCup2016.add(teamEngland); 
+        playersInWorldCup2016.add(teamNewZeland);
+        playersInWorldCup2016.add(teamSouthAfrica); 
+        playersInWorldCup2016.add(teamWestIndies); 
+        playersInWorldCup2016.add(teamSriLanka); 
+        playersInWorldCup2016.add(teamPakistan); 
 // Let's print all players before Java 
         List<String> listOfAllPlayers = new ArrayList<>(); 
         for(List<String> team : playersInWorldCup2016)
@@ -34,10 +38,13 @@ public class flatMaPStream_Examples {
         System.out.println("Players playing in world cup 2016"); 
         System.out.println(listOfAllPlayers); 
 // Now let's do this in Java 8 using FlatMap 
-        List<String> flatMapList = playersInWorldCup2016 .stream() .
-                flatMap(pList -> pList.stream()) 
-                .collect(Collectors.toList());
+        //List<String> flatMapList = 
         System.out.println("List of all Players using Java 8"); 
-        System.out.println(flatMapList);
+        playersInWorldCup2016 .stream() .
+                flatMap(pList -> pList.stream()) 
+                .collect(Collectors.toList()).forEach((t) -> {
+                    System.out.println(t);
+                });
+        // System.out.println(flatMapList);
     }   
 }
