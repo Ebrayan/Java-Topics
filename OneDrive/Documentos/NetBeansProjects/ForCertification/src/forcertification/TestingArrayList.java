@@ -15,21 +15,31 @@ public class TestingArrayList {
 
     public static void main(String[] args) {
         
-            ArrayList<String> list  = new ArrayList<>();
-            list.add(0,"Hola1");
-            list.add(0,"Hola2");
-            list.add(0,"Hola3");
-            list.add(0,"Hola4");
-            list.add(0,"Adios");
-            
-            list.stream().forEach((t) -> {
-                System.out.println(t); 
-            });
-            
-            
+//            ArrayList<String> list  = new ArrayList<>();
+//            list.add(0,"Hola1");
+//            list.add(0,"Hola2");
+//            list.add(0,"Hola3");
+//            list.add(0,"Hola4");
+//            list.add(0,"Adios");
+//            
+//            list.stream().forEach((t) -> {
+//                System.out.println(t); 
+//            });
             
             
-            System.out.println(list.size());
+
+            ArrayList<String> prueba=  new ArrayList<>();
+            
+            prueba.add(0, "Hola");
+            prueba.set(0, "Hola");
+            prueba.set(1, "Final");
+            
+            
+            
+            
+            
+            //System.out.println(list.size());
+          //  System.out.println(prueba.size());
 
         
     }

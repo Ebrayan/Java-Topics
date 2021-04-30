@@ -5,20 +5,23 @@
  */
 package forcertification;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-
 /**
  *
  * @author braya
  */
-public class TestingColletions {
-                 
-    
+public class string {
+ 
     public static void main(String[] args) {
-        List<List> lista =  new ArrayList<>();
-        lista.add(lista);
-    }   
+        
+        String hola  =  "Hellos How Are You";
+        
+        hola.toLowerCase();
+        
+        System.out.println(hola);
+        
+        
+    }
+    
+    
+    
 }

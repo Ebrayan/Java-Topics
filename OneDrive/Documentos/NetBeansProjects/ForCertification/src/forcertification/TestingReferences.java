@@ -18,10 +18,6 @@ public class TestingReferences {
          
         long numero1=System.currentTimeMillis();
          
-        for (int i=0;i&lt;10;i++){
-             
-            total+=duplicar(i);
-        }
          
         
         
