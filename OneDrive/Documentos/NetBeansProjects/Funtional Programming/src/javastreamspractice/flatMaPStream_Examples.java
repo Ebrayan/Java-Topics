@@ -38,7 +38,8 @@ public class flatMaPStream_Examples {
         System.out.println("Players playing in world cup 2016"); 
         System.out.println(listOfAllPlayers); 
 // Now let's do this in Java 8 using FlatMap 
-        //List<String> flatMapList = 
+    
+//List<String> flatMapList = 
         System.out.println("List of all Players using Java 8"); 
         playersInWorldCup2016 .stream() .
                 flatMap(pList -> pList.stream()) 
