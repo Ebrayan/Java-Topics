@@ -13,11 +13,21 @@ public class string {
  
     public static void main(String[] args) {
         
-        String hola  =  "Hellos How Are You";
+        String SomeVariableName  =  "Hellos How Are You";
         
-        hola.toLowerCase();
+        String toLowerCase = SomeVariableName.toLowerCase();
         
-        System.out.println(hola);
+        
+        int value =1;
+        switch(value){
+           case 1: case 2: case 3:
+         break;
+        }
+        
+        
+                 
+        System.out.println(SomeVariableName);
+        
         
         
     }
